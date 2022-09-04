@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color:rgba(231, 218, 255, 0.95);
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(156, 7, 156);
+    text-transform: uppercase;
+}
+.navigation a {
+    text-decoration: none;
+    padding-left: 40px;
+    font-weight: 500;
+    color: rgb(156, 7, 156);
+    font-size: 20px;
+}
+header a:hover{
+    color: blue;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: no-repeat url(img/emile-.jpg) fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main h2 spen{
+    display: inline-block;
+    text-align: center;
+    color: rgb(0, 255, 255);
+    margin-top: 15px;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px black;
+}
+.main h3{
+    color: #fff;
+    margin-top:20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.main-btn{
+    background-color: rgb(66, 66, 255);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+    transition: ease 0.5s;
+}
+.main-btn:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+.réseau-social a{
+    color: #fff;
+    font-size: 25px;
+    padding-left: 40px;
+    display: inline-block;
+    margin-top:20px;
+}
+.titre{
+    text-align: center;
+    color: rgb(156, 7, 156);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.carte{
+    background-color: white;
+    width: 320px;
+    margin-left: 34.3px;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(128, 0, 128, 0.575);
+    transition: ease 0.2s;
+}
+.icon{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(22, 22, 255);
+}
+.carte:hover{
+    transform: scale(1.1);
+}
+.info h3{
+    text-align: center;
+    color: rgb(22, 22, 255);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom:10px;
+}
+.info p{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 10px;
+}
+.projects{
+    background-color: rgb(218, 208, 255);
+}
+.projects content{
+    margin-top: 30px;
+}
+.project-card{
+    border: 2px solid white;
+    background-color: white;
+    min-width: 224px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-size: cover;
+    width : 350px;
+    margin: 20px;
+    transition: ease 0.4s;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-image img{
+    width: 100%;
+    height: 200px;
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-info{
+    margin: 20px;
+}
+.project-p{
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+.project-b{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.project-link{
+    text-decoration: none;
+    color: rgb(22, 22, 255);
+    transition: ease 0.4s;
+}
+.project-link:hover{
+    color: blue;
+    transform: scale(1.1);
+    font-weight: 800;
+}
+#info p{
+    display: flex;
+    justify-content: center; 
+    padding-top: 10px;
+    font-weight: 800;
+}
+#carte div i {
+    font-size: 100px;
+}
+footer{
+    background-color : rgb(218, 208, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer p {
+    padding-top: 20px;
+}
+.footer .fa-brands{
+    color: rgb(38, 0, 255);
+}
+.footer div{
+    margin-right: 60px;
+}
+.footer spen{
+    font-weight: 600;
+    color: rgb(78, 46, 255);
+}
+
+@media(max-width: 1180px){
+    header{
+        padding: 10px 40px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .navigation a{
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    section{
+        padding: 15px 25px;
+    }
+    .main{
+        width: 100%;
+        min-height: 900px;
+    }
+    .main h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .main h2 spen{
+        margin-top: 20px;
+        margin-bottom: 12px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .main-btn{
+        margin-left: 16px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .réseau-social{
+        padding-left: 40px;
+    }
+    .réseau-social a {
+        font-size: 18px;
+        padding-left: 25px;
+    }
+    .titre{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .carte{
+        width: 240px;
+        margin: 37px;
+        box-shadow: 0 2.5px 8px rgba(128, 0, 128, 0.575);
+    }
+    .icon{
+        font-size: 65px;
+    }
+    .info h3{
+        font-weight: 700;
+        font-size: 16px; 
+    }
+    .info p {
+        font-weight: 600;
+        font-size: 10px;
+        margin: 7px 7px;
+    }
+    .project-card{
+        width : 200px;
+        margin: 12px;
+    }
+    .project-image img{
+        width: 100%;
+        height: 120px;
+    }
+    .project-info{
+        margin: 12px;
+    }
+    .project-p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .project-b{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    #carte{
+        width: 190px;
+    }
+    #carte .icon i{
+        font-size: 40px;
+    }
+    #info h3{
+        margin:0px;
+    }
+    #info p{
+        margin:0px;
+        padding: 3px;
+    }
+    .footer{
+        display:flex;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .réseau-social a{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 912px){
+    header{
+        padding: 15px 70px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .navigation a{
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    section{
+        padding: 25px;
+    }
+    .main{
+        width: 100%;
+        min-height: 800px;
+    }
+    .main h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .main h2 spen{
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 37px;
+        line-height: 45px;
+    }
+    .main h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .main-btn{
+        margin-left: 16px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .réseau-social{
+        padding-left: 52px;
+    }
+    .réseau-social a i{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    #services{
+        min-height: 450px;
+    }
+    .titre{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .carte{
+        width: 220px;
+        margin: 15px;
+        box-shadow: 0 2.5px 8px rgba(128, 0, 128, 0.575);
+    }
+    .icon{
+        font-size: 65px;
+    }
+    .info h3{
+        font-weight: 700;
+        font-size: 16px; 
+    }
+    .info p {
+        font-weight: 600;
+        font-size: 10px;
+        margin: 7px 7px;
+    }
+    #projects{
+        min-height: 350px;
+    }
+    .project-card{
+        width : 200px;
+        margin: 12px;
+    }
+    .project-image img{
+        width: 100%;
+        height: 120px;
+    }
+    .project-info{
+        margin: 12px;
+    }
+    .project-p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .project-b{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    #carte{
+        width: 150px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #carte .icon i{
+        font-size: 40px;
+    }
+    #info h3{
+        margin:0px;
+    }
+    #info p{
+        margin:0px;
+        padding: 5px;
+    }
+    .footer{
+        display:flex;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .réseau-social a{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 554px){
+    header{
+        padding: 15px 30px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .navigation a{
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    section{
+        padding: 20px;
+    }
+    .main{
+        width: 100%;
+        min-height: 720px;
+    }
+    .main h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .main h2 spen{
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .main h3{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .main-btn{
+        margin-left: 16px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .réseau-social{
+        padding-left: 45px;
+    }
+    .réseau-social a i{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    #services{
+        min-height: 450px;
+    }
+    .titre{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .carte{
+        width: 220px;
+        margin: 15px;
+        box-shadow: 0 2.5px 8px rgba(128, 0, 128, 0.575);
+    }
+    .icon{
+        font-size: 65px;
+    }
+    .info h3{
+        font-weight: 700;
+        font-size: 16px; 
+    }
+    .info p {
+        font-weight: 600;
+        font-size: 10px;
+        margin: 7px 7px;
+    }
+    #projects{
+        min-height: 350px;
+    }
+    .project-card{
+        width : 200px;
+        margin: 12px;
+    }
+    .project-image img{
+        width: 100%;
+        height: 120px;
+    }
+    .project-info{
+        margin: 12px;
+    }
+    .project-p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .project-b{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    #carte{
+        width: 150px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #carte .icon i{
+        font-size: 40px;
+    }
+    #info h3{
+        margin:0px;
+    }
+    #info p{
+        margin:0px;
+        padding: 5px;
+    }
+    .footer{
+        display:flex;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .réseau-social a{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 474px){
+    header{
+        padding: 15px 20px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .navigation a{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    section{
+        padding: 20px;
+    }
+    .main{
+        width: 100%;
+        min-height: 900px;
+    }
+    .main h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .main h2 spen{
+        margin-top: 15px;
+        margin-bottom: 3px;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .main h3{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .main-btn{
+        margin-left: 16px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .réseau-social{
+        padding-left: 45px;
+    }
+    .réseau-social a i{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    #services{
+        min-height: 450px;
+    }
+    .titre{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .carte{
+        width: 220px;
+        margin: 10px;
+        box-shadow: 0 2.5px 8px rgba(128, 0, 128, 0.575);
+    }
+    .icon{
+        font-size: 65px;
+    }
+    .info h3{
+        font-weight: 700;
+        font-size: 16px; 
+    }
+    .info p {
+        font-weight: 600;
+        font-size: 10px;
+        margin: 7px 7px;
+    }
+    #projects{
+        min-height: 350px;
+    }
+    .project-card{
+        width : 200px;
+        margin: 12px;
+    }
+    .project-image img{
+        width: 100%;
+        height: 120px;
+    }
+    .project-info{
+        margin: 12px;
+    }
+    .project-p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .project-b{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    #carte{
+        width: 150px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #carte .icon i{
+        font-size: 40px;
+    }
+    #info h3{
+        margin:0px;
+    }
+    #info p{
+        margin:0px;
+        padding: 5px;
+    }
+    .footer{
+        display:flex;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .réseau-social a{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 375px){
+    header{
+        padding: 15px 20px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .navigation a{
+        padding-left: 7px;
+        font-size: 14px;
+    }
+    section{
+        padding: 20px;
+    }
+    .main{
+        width: 100%;
+        min-height: 660px;
+    }
+    .main h2{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .main h2 spen{
+        margin-top: 15px;
+        margin-bottom: 3px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .main h3{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .main-btn{
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .réseau-social{
+        padding-left: 45px;
+    }
+    .réseau-social a i{
+        font-size: 18px;
+        padding-left: 7px;
+    }
+    #services{
+        min-height: 450px;
+    }
+    .titre{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .carte{
+        width: 220px;
+        margin: 10px;
+        box-shadow: 0 2.5px 8px rgba(128, 0, 128, 0.575);
+    }
+    .icon{
+        font-size: 65px;
+    }
+    .info h3{
+        font-weight: 700;
+        font-size: 16px; 
+    }
+    .info p {
+        font-weight: 600;
+        font-size: 10px;
+        margin: 7px 7px;
+    }
+    #projects{
+        min-height: 350px;
+    }
+    .project-card{
+        width : 200px;
+        margin: 12px;
+    }
+    .project-image img{
+        width: 100%;
+        height: 120px;
+    }
+    .project-info{
+        margin: 12px;
+    }
+    .project-p{
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .project-b{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    #carte{
+        width: 145px;
+        height: 160px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #carte .icon i{
+        font-size: 30px;
+    }
+    #info h3{
+        margin:0px;
+    }
+    #info p{
+        margin:0px;
+        padding: 5px;
+    }
+    .footer{
+        display:flex;
+        padding: 10px;
+    }
+    footer p{
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .réseau-social{
+        margin-bottom: 20px;
+    }
+    .réseau-social a i{
+        font-size: 10px;
+        padding-left: 10px;
+    }
+}
